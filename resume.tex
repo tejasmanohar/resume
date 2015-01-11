@@ -8,15 +8,6 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks,urlcolor=blue}
 
-\makeatletter
-\DeclareUrlCommand\ULurl@@{
-  \def\UrlFont{\ttfamily\color{blue}}
-  \def\UrlLeft{\uline\bgroup}
-  \def\UrlRight{\egroup}}
-\def\ULurl@#1{\hyper@linkurl{\ULurl@@{#1}}{#1}}
-\DeclareRobustCommand*\ULurl{\hyper@normalise\ULurl@}
-\makeatother
-
 \newcommand*{\its}{\hspace{0.8cm}}
 
 \begin{document}
